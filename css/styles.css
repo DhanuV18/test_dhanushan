@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+d html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+a:visited {
+  color: purple;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(232, 226, 226);
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(13, 13, 245);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+P {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4.5rem;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
