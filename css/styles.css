@@ -209,7 +209,7 @@ P {
 
 .nav__item {
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid rgb(8, 100, 177);
+  border-bottom: 1px solid white;
 }
 
 .nav__item:last-of-type {
@@ -220,10 +220,11 @@ P {
   color: white;
   font-size: 2.2rem;
   transition: color 0.3s;
+  margin-left: 3rem;
 }
-
 .nav__item > a:hover {
-  color: rgb(8, 100, 177);
+  color: white;
+  text-decoration: none;
   text-shadow: 0 0 1px rgb(8, 100, 177);
 }
 
@@ -247,18 +248,18 @@ P {
   transform: translateY(5px);
   width: 200px;
   color: white;
-  font-size: 2rem;
-  margin-left: 5rem;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+}
+.nav__brand:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .nav__brand:visited {
   transform: translateY(5px);
   width: 200px;
   color: white;
-}
-
-.nav__brand:hover {
-  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -281,6 +282,9 @@ P {
     width: 500px;
     color: white;
     font-size: 5rem;
+  }
+  .nav__brand:hover {
+    color: white;
   }
 }
 /* Grid */
@@ -425,7 +429,7 @@ P {
 /* Footer */
 .footer__part {
   background-color: rgb(8, 100, 177);
-  padding: 5rem 0;
+  padding: 0 0 25rem 0;
 }
 
 .footer__heading {
@@ -436,14 +440,17 @@ P {
 
 .address {
   color: white;
-  margin: 5rem 0;
+  margin: 0;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .social__heading {
   color: white;
   font-weight: bold;
   font-size: 3rem;
+  word-wrap: nowrap;
+  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -455,6 +462,10 @@ P {
     color: white;
     font-weight: bold;
     font-size: 3rem;
+    margin-top: 5rem;
+  }
+  .footer__part {
+    padding: 0;
   }
 }
 .icon {
@@ -463,6 +474,8 @@ P {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
+  margin-bottom: -10rem;
 }
 
 .social {
@@ -479,6 +492,10 @@ P {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.icons:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
 }
 
 .footer__container {

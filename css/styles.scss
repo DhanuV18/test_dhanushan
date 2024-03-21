@@ -160,7 +160,6 @@ P{
     padding: 5rem 0;
 }
 
-
 .quote__author {
     font-size: 2rem;
     font-weight: 500;
@@ -188,8 +187,6 @@ P{
     right: 0;
     top: 0;
 }
-
-
 
 @media screen and (min-width: 1024px) {
     .quote {
@@ -248,7 +245,7 @@ P{
 
 .nav__item {
     padding: 0.5rem 2rem;
-    border-bottom: 1px solid $color-primary;    
+    border-bottom: 1px solid white;    
 }
 
 .nav__item:last-of-type {
@@ -259,11 +256,13 @@ P{
     color: white;
     font-size: 2.2rem;
     transition: color 0.3s;
-}
+    margin-left: 3rem;
 
-.nav__item>a:hover {
-    color: $color-primary;
-    text-shadow: 0 0 1px $color-primary;
+    &:hover{
+        color: white;
+        text-decoration: none;
+        text-shadow: 0 0 1px $color-primary;
+    }
 }
 
 .nav__toggler {
@@ -279,16 +278,20 @@ P{
     box-shadow: 0 0 3px 3px white;
     border-radius: 5px;
     outline: 0;
-    border: 0;
-    
+    border: 0;   
 }
 
 .nav__brand {
     transform: translateY(5px);
     width: 200px; 
     color: white;
-    font-size: 2rem;
-    margin-left: 5rem;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+
+    &:hover{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .nav__brand:visited{
@@ -297,9 +300,6 @@ P{
     color: white;
 }
 
-.nav__brand:hover{
-    text-decoration: none;
-}
 
 @media screen and (min-width: 768px) {
     .nav__toggler {
@@ -319,17 +319,19 @@ P{
         list-style-type: none;
     }
 
+
     .nav__brand {
         transform: translateY(5px);
         width: 500px; 
         color: white;
         font-size: 5rem;
+
+        &:hover{
+            color: white;
+        }
     }
+
 }
-
-
-
-
 
 /* Grid */
 
@@ -505,7 +507,7 @@ P{
 
 .footer__part{
     background-color: $color-primary;
-    padding: 5rem 0;
+    padding: 0 0 25rem 0;
 }
 
 .footer__heading{
@@ -516,14 +518,18 @@ P{
 
 .address{
     color: white;
-    margin: 5rem 0;
+    margin: 0;
     padding-bottom: 2rem;
+    text-align: center;
+
 }
 
 .social__heading{
     color: white;
     font-weight: bold;
     font-size: 3rem;
+    word-wrap: nowrap;
+    text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -535,11 +541,12 @@ P{
         color: white;
         font-weight: bold;
         font-size: 3rem;
+        margin-top: 5rem    ;
+    }
+    .footer__part{
+        padding: 0;
     }
 }
-
-
-
 
 .icon{
     height: 60px;
@@ -547,6 +554,8 @@ P{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
+    margin-bottom: -10rem;
 }
 
 .social{
@@ -564,6 +573,11 @@ P{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    &:hover{
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
 }
 
 .footer__container{
